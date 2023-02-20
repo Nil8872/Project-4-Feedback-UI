@@ -30,15 +30,11 @@ body{
     text-shadow:  4px 4px 3px rgba(45, 46, 46, 0.45);
     margin-top : 20px;
 }
-.container .jock{
-    margin: 20px;
-    font-size : 22px;
-    padding : 0 15px;
-}
+ 
 .container .button1{
     display: flex;
-   margin-top:50px ;
-   margin-bottom: 15px;
+   margin-top:30px ;
+   margin-bottom: 25px;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -59,9 +55,68 @@ body{
      border-radius: 5px;
      color: green ;
 }
+.container #btn:active{
+    transform: scale(0.96);
+}
 
 #btn:hover{
     background-color: rgba(255,255,255, 0.6);
     box-shadow: 0 5px 10px rgba(45, 46, 46, 0.45);
 }
  
+.emoji-container{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.emoji{
+    margin:20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.emoji:hover,.active{
+    background-color: rgba(255,255,255, 0.3);
+    box-shadow: 0 5px 10px rgba(45, 46, 46, 0.45);
+    cursor: pointer;
+    transition: all 0.1s ease;
+    /* transform: scale(1.1); */
+
+}
+.emoji img{
+    height: 100px;
+    width: 100px;
+}
+.emoji .imgName{
+    text-align: center;
+    margin-top : 6px;
+    font-size: 25px;
+}
+#imgName-1{
+    color: red;
+
+}
+#imgName-3{
+    color: green;
+}
+#imgName-2{
+    color: grey;
+}
+
+.message p{
+    font-size: 30px;
+    color:green;
+    margin:30px;
+    padding: 20px;
+}
+.feedback{
+    font-size: 30px;
+    text-align: center;
+    margin-top:30px;
+    color:blue;
+}
+.feedback strong{
+    font-size: 35px;
+    color: red;
+
+}
